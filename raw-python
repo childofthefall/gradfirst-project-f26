@@ -1,0 +1,23 @@
+# list of variables
+race_status = ['White', 'Black/African American', 'Native American or Alaska Native', 'South Asian', 'Native Hawaiian or Other Pacific Islander', 'Mixed Race', 'Hispanic/Latino', 'Middle Eastern', 'East Asian']
+
+origin_status = ['citizen', 'non-citizen']
+
+socioecon_status = ['wealthy', 'middle class', 'working class', 'poverty']
+
+goal_status = ['enter', 'exit']
+
+motiv_status = ['work', 'seek medical care', 'be with family', 'escape political violence', 'take a vacation'] 
+
+
+# generate variables
+import random
+race = random.choice(race_status)
+origin = random.choice (origin_status)
+socioecon = random.choice (socioecon_status)
+goal = random.choice (goal_status)
+motiv = random.choice (motiv_status)
+
+# print string
+
+print(f'You are a {race} {origin} of the city. You are {socioecon}. You want to {goal} the city so you can {motiv}.')
